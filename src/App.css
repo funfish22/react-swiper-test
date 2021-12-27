@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+a {
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#certify {
+    width: 980px;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#certify .swiper-slide {
+    width: 600px;
+    height: 280px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#certify .swiper-wrapper a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: all 0.3s;
+    font-size: 0;
 }
 
-.App-link {
-  color: #61dafb;
+#certify .swiper-slide a:before {
+    content: '进入游戏';
+    width: 100%;
+    height: 100%;
+    background: url('./assets/image/enter.png') no-repeat center 110px;
+    display: block;
+    text-align: center;
+    line-height: 320px;
+    color: #ffc314;
+    font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#certify .swiper-slide a:hover {
+    opacity: 1;
 }
